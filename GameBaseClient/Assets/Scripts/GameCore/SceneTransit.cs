@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEngine;
+using Cysharp.Threading.Tasks;
+using R3;
 using UnityEngine.SceneManagement;
 
 public class SceneTransit : SingletonBase<SceneTransit>
 {
     private string _currentScene = null;
+    private const string InternalSceneName = "Internal";
+    public static void GotoScene(string sceneName)
+    {
+        GetInstance().RequestGotoScene(sceneName);
+    }
     private void RequestGotoScene(string sceneName)
     {
         if (string.IsNullOrEmpty(_currentScene))
@@ -15,21 +17,21 @@ public class SceneTransit : SingletonBase<SceneTransit>
             _currentScene = SceneManager.GetActiveScene().name;
         }
 
-        GameMainObject.Instance.StartCoroutine(RequestChangeSceneAsync(sceneName));
+        RequestChangeSceneAsync(sceneName).Forget();
     }
-    private IEnumerator RequestChangeSceneAsync(string sceneName)
+    private async UniTask<Unit> RequestChangeSceneAsync(string sceneName)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-
-        while (!asyncLoad.isDone)
+        using (await LoadScope.CreateAsync())
         {
-            yield return null;
+            await SceneManager.LoadSceneAsync(InternalSceneName, LoadSceneMode.Single);
+
+            _currentScene = InternalSceneName;
+
+            await SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+
+            _currentScene = sceneName;
         }
 
-        _currentScene = sceneName;
-    }
-    public static void GotoScene(string sceneName)
-    {
-        GetInstance().RequestGotoScene(sceneName);
+        return Unit.Default;
     }
 }

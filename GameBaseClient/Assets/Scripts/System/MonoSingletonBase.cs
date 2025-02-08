@@ -16,7 +16,7 @@ public class MonoSingletonBase<T> : MonoBehaviour where T : MonoBehaviour
             if (_instance == null)
             {
                 // インスタンスがまだ作成されていない場合は、新しいインスタンスを作成する
-                _instance = FindObjectOfType<T>();
+                _instance = FindObjectOfType<T>(includeInactive: true);
             }
             return _instance;
         }
