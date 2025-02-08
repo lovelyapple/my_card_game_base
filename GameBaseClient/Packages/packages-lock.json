@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.mastermemory": {
+      "version": "2.4.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.cysharp.r3": {
       "version": "1.2.9",
       "depth": 0,
@@ -144,9 +151,40 @@
       },
       "url": "https://packages.unity.com"
     },
+    "org.nuget.messagepack": {
+      "version": "3.1.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.messagepackanalyzer": "3.1.3",
+        "org.nuget.messagepack.annotations": "3.1.3",
+        "org.nuget.microsoft.bcl.asyncinterfaces": "8.0.0",
+        "org.nuget.system.collections.immutable": "8.0.0",
+        "org.nuget.system.reflection.emit": "4.7.0",
+        "org.nuget.system.reflection.emit.lightweight": "4.7.0",
+        "org.nuget.system.threading.tasks.extensions": "4.5.4",
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
+    "org.nuget.messagepack.annotations": {
+      "version": "3.1.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
+    "org.nuget.messagepackanalyzer": {
+      "version": "3.1.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
     "org.nuget.microsoft.bcl.asyncinterfaces": {
-      "version": "6.0.0",
-      "depth": 2,
+      "version": "8.0.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.threading.tasks.extensions": "4.5.4"
@@ -159,6 +197,16 @@
       "source": "registry",
       "dependencies": {
         "org.nuget.microsoft.bcl.asyncinterfaces": "6.0.0"
+      },
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
+    "org.nuget.microsoft.net.stringtools": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.5.4",
+        "org.nuget.system.runtime.compilerservices.unsafe": "5.0.0"
       },
       "url": "https://unitynuget-registry.azurewebsites.net"
     },
@@ -203,6 +251,16 @@
       "dependencies": {},
       "url": "https://unitynuget-registry.azurewebsites.net"
     },
+    "org.nuget.system.collections.immutable": {
+      "version": "8.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
     "org.nuget.system.componentmodel.annotations": {
       "version": "5.0.0",
       "depth": 1,
@@ -228,6 +286,31 @@
       "dependencies": {},
       "url": "https://unitynuget-registry.azurewebsites.net"
     },
+    "org.nuget.system.reflection.emit": {
+      "version": "4.7.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.reflection.emit.ilgeneration": "4.7.0"
+      },
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
+    "org.nuget.system.reflection.emit.ilgeneration": {
+      "version": "4.7.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
+    "org.nuget.system.reflection.emit.lightweight": {
+      "version": "4.7.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.reflection.emit.ilgeneration": "4.7.0"
+      },
+      "url": "https://unitynuget-registry.azurewebsites.net"
+    },
     "org.nuget.system.runtime.compilerservices.unsafe": {
       "version": "6.0.0",
       "depth": 1,
@@ -246,7 +329,7 @@
     },
     "org.nuget.system.threading.tasks.extensions": {
       "version": "4.5.4",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.runtime.compilerservices.unsafe": "4.5.3"
