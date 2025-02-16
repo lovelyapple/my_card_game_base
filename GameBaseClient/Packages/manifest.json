@@ -3,6 +3,7 @@
     "com.cysharp.mastermemory": "2.4.4",
     "com.cysharp.r3": "1.2.9",
     "com.cysharp.unitask": "2.5.10",
+    "com.unity.addressables": "1.21.21",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
