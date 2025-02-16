@@ -25,6 +25,9 @@ public class InitializeController : MonoSingletonBase<InitializeController>
         var sceneTransit = new SceneTransit();
         sceneTransit.SetInsance(sceneTransit);
 
+        var assetLoader = new AssetLoader();
+        assetLoader.SetInsance(assetLoader);
+
         _state = State.RequestGo;
     }
     public void Update()
