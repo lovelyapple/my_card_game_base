@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c1731434d288b784682c81e673b85541
+  m_SerializeEntries:
+  - m_GUID: a5602dc4c84bb6a44b952b3a46e18b5b
+    m_Address: Assets/ExternalResources/Texture/CommonIcon/Icon_ToggleOn.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15dd7e42602364b41bc9c114a03e5159
+    m_Address: Assets/ExternalResources/Texture/CommonIcon/Icon_Arrow_Forward.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b252570079efdb46bb0b0fc57c34ab1
+    m_Address: Assets/ExternalResources/Texture/CommonIcon/Icon_ArrowBack.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 30974a7eb1c4a9449b6acd1b0b4482e8, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 31498b62bfa9abe4ea1e1615cfbf36ff, type: 2}
+    - {fileID: 11400000, guid: 819fb8eb528147d48bfd866c77d4abda, type: 2}
